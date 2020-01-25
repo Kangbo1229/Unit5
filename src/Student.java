@@ -15,15 +15,15 @@ public class Student{
 
     public void inputGrades(){
         Scanner scan = new Scanner(System.in);
-        System.out.println(Name+"'s Test1 Score");
-        Test1 = scan.nextInt();
-        System.out.println(Name+"'s Test2 Score");
-        Test2 = scan.nextInt();
+        System.out.println("Enter "+Name+" Test1 score");
+        Test1 = scan.nextDouble();
+        System.out.println("Enter "+Name+" Test2 score");
+        Test2 = scan.nextDouble();
 
     }
 
     public double getAverage(){
-        return ((Test1+Test2)/2);
+        return (Test1+Test2)/2;
     }
 
     public String getName() {
